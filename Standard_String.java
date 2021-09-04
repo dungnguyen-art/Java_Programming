@@ -9,6 +9,8 @@ public class Standard_String {
             int len = s.length();
             String sTmp = "";
             boolean ok = false;
+            
+            // Xóa các dấu " " trong chuỗi
             for(int i=0;i<len;i++){
                 if(s.charAt(i) != ' '){
                     sTmp = sTmp + s.charAt(i);
@@ -19,16 +21,14 @@ public class Standard_String {
                     ok = false;
                 }
             }
-            // System.out.println(sTmp);
+            
+            // Chuyển tât cả các kí tự thành chữ thường
             String s1 = new String(sTmp);
             s1 = sTmp.toLowerCase();
             len = sTmp.length();
             String res = "";
-            // char ch='\0';
-            // char fUpper = Character.toUpperCase(s1.charAt(0));
-
-            // System.out.println(fUpper);
-            // res = res + ch;
+            
+            // Chuyển các kí tự đầu sang chữ hoa.
             for(int i=0;i<len;i++){
                 if(i==0){
                     char ch = Character.toUpperCase(s1.charAt(i));
