@@ -21,7 +21,7 @@ public class Nhap {
         }
         else{
             j04002 RTG = new j04002(w,h,clr);
-            System.out.println((int)RTG.Area()+ " " + (int)RTG.Perimeter() + " " + RTG.reColor());
+            System.out.println((int)RTG.Perimeter() + " " + (int)RTG.Area()+ " " + RTG.reColor());
         }
     }
 }
