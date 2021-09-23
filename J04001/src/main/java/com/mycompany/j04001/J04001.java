@@ -38,13 +38,13 @@ public class J04001 {
     public double distance(J04001 secondPoint){
         double d1 = this.x - secondPoint.x;
         double d2 = this.y - secondPoint.y;
-        double dis = Math.sqrt(d1*d1+d2*d2);
+        double dis = Math.sqrt((d1*d1)+(d2*d2));
         return dis;
     }
     public double distance(J04001 p1, J04001 p2){
         double d1 = p1.x - p2.x;
         double d2 = p1.y - p2.y;
-        double dis = Math.sqrt(d1*d1 + d2*d2);
+        double dis = Math.sqrt((d1*d1) + (d2*d2));
         return dis;
     }
 }

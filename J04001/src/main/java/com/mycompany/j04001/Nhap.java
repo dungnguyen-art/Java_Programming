@@ -21,6 +21,7 @@ public class Nhap {
             P1.setY(sc.nextDouble());
             P2.setX(sc.nextDouble());
             P2.setY(sc.nextDouble());
+//            sc.nextLine();
             double res = P1.distance(P2);
             String s = String.format("%.4f",res);
             System.out.println(s);
