@@ -38,7 +38,7 @@ public class j04002 {
         return h;
     }
 
-    public void setHeight(double w) {
+    public void setHeight(double h) {
         this.h = h;
     }
 
