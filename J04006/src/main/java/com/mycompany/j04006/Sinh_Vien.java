@@ -12,10 +12,10 @@ package com.mycompany.j04006;
  */
 import java.text.SimpleDateFormat;
 import java.util.Date;
-public class J04006 {
-    String name,cls,date;
-    Float degree;
-    public J04006(String name, String cls,String date, Float degree){
+public class Sinh_Vien {
+    private String name,cls,date;
+    private Float degree;
+    public Sinh_Vien(String name, String cls,String date, Float degree){
         this.name = name;
         this.cls = cls;
         this.date = date;
@@ -32,6 +32,7 @@ public class J04006 {
          String degre = String.format("%.2f", this.degree);
 //        Date date = formatter.format(this.date);
         System.out.print("B20DCCN001 " + this.name + " " +this.cls + " " + date+" " + degre);
+        System.out.println("\n");
     }
     
 }
