@@ -20,13 +20,17 @@ public class J02006 {
         ArrayList<Integer> arrB = new ArrayList<>();
         for (int i=0;i<n;i++){
             int x = Integer.parseInt(sc.next());
-            arrA.add(x);
+             if(arrA.contains(x));
+             else
+                arrA.add(x);
         }
         for (int i=0;i<m;i++){
             int x = Integer.parseInt(sc.next());
-            arrB.add(x);
+            if(arrB.contains(x));
+            else
+                arrB.add(x);
         }
-        arrA.retainAll(arrB);
+        arrA.retainAll(arrB);   // arrA chỉ giữ lại các phần tử có trong arrB
         Collections.sort(arrA);
         for (Integer i:arrA){
             System.out.print(i.toString()+" ");
