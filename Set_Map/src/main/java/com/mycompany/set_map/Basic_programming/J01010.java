@@ -42,8 +42,8 @@ public class J01010 {
                         break;
                 }
             }
-            int rs = Integer.parseInt(res);
-            if (flag == 1) {
+            long rs = Long.parseLong(res);
+            if (flag == 1 || rs == 0) {
                 System.out.println("INVALID");
             } else {
                 System.out.println(rs);

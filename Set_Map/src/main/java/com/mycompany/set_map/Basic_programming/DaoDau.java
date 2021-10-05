@@ -23,14 +23,24 @@ public class DaoDau {
             arr.add(x);
         }
         Collections.sort(arr);
-        int sum = 0;
-        for (int i = 0; i < n; i++) {
-            if (i < m) {
-                int x = -arr.get(i);
-                sum += x;
+        // đổi dấu tất cả các số âm
+        int j = 0;
+        while (m-- > 0) {
+            if (arr.get(j) < 0) {
+                arr.set(j, -arr.get(j));
             } else {
-                sum += arr.get(i);
+                break;
             }
+            j += 1;
+        }
+        Collections.sort(arr);
+        // Nếu số lượt đổi còn lại là lẻ thì đổi dấu số nhỏ nhất.
+        long sum = 0;
+        if (m % 2 == 0) {
+            arr.set(0, -arr.get(0));
+        }
+        for (int i = 0; i < n; i++) {
+            sum += arr.get(i);
         }
         System.out.println(sum);
     }
