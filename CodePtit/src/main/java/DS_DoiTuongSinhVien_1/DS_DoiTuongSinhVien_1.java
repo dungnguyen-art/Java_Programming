@@ -34,7 +34,7 @@ public class DS_DoiTuongSinhVien_1 {
         else{
             tmp = "0"+String.valueOf(ma);
         }
-        String res = "B20DCCN0" + tmp;
+        String res = "B20DCCN" + tmp;
         return res;
     }
 
