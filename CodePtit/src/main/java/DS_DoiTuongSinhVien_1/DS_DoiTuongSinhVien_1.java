@@ -27,7 +27,14 @@ public class DS_DoiTuongSinhVien_1 {
     }
 
     public String FormatMA(int ma) {
-        String res = "B20DCCN00" + String.valueOf(ma);
+        String tmp;
+        if(ma<10){
+            tmp = "00"+String.valueOf(ma);
+        }
+        else{
+            tmp = "0"+String.valueOf(ma);
+        }
+        String res = "B20DCCN0" + tmp;
         return res;
     }
 
